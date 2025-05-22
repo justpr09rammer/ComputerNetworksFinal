@@ -193,7 +193,7 @@ public class MemberService {
         try {
             memberRepository.delete(member);
             return DeleteAccountResponse.builder()
-                    .message("User with ID " + request.getId() + " has been deleted successfully")
+                    .message("User with ID " + request.getId() + " has been deleted  successfully")
                     .accountInfo(accountInfo)
                     .build();
         } catch (Exception e) {
